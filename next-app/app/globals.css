@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base styles */
+body {
+  background: white;
+  @apply text-black;
+}
+nav {
+  @apply m-2;
+}
+h1,
+h2 {
+  @apply font-bold text-black text-5xl;
+}
+main {
+  @apply max-w-5xl my-12 mx-auto px-8;
+}
+main > h2 {
+  @apply mb-4 pb-2 text-base;
+}
+p > a {
+  @apply text-primary underline;
+}
+
+/* nav styles */
+
+/* button styles */
+/* Assuming you are using a CSS preprocessor like PostCSS with Tailwind CSS */
+button {
+  @apply px-3 py-2 
+    rounded-sm 
+    flex  items-center gap-2
+    text-sm w-36 text-center align-middle justify-center;
+
+}
+.linkbutton{
+  @apply="px-8 py-4 bg-transparent border-2 border-primary rounded-md text-black hover:text-white relative font-medium after:-z-20 after:absolute after:h-1 after:w-1 after:bg-primary after:left-5 overflow-hidden after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700"
+}
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+button:hover {
+  @apply bg-opacity-85;
+}
+.btn-primary {
+  @apply bg-primary text-white;
+}
+.btn-secondary {
+  @apply bg-gray-200 text-gray-900;
+}
+.btn-outline {
+  @apply bg-transparent border-2 border-primary hover:bg-primary hover:text-white;
+}
+
+/* form styles */
+form {
+  @apply py-4 px-7 
+    bg-primary 
+    bg-opacity-5 
+    rounded-md 
+    block 
+    mx-auto 
+    min-w-fit w-1/4;
+}
+form label {
+  @apply block;
+}
+form input,
+form textarea,
+form select {
+  @apply block 
+    mt-2 my-4 px-2 py-1 
+    rounded-sm w-full;
+}
+form button {
+  @apply block mx-auto;
+}
+
+/* feedback styles */
+.error {
+  @apply border-2 
+    border-red-500 
+    bg-red-300
+    text-red-800 
+    py-1 px-2 
+    rounded-sm
+    block
+    max-w-fit
+    my-4 mx-auto;
+}
+
+.navlist {
+  @apply hover:text-gray-600;
+}
+
+li{
+  @apply pt-5;
+}
